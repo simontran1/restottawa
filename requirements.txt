@@ -1,0 +1,7 @@
+flask
+flask-wtf
+requests
+python-dotenv
+gunicorn
+black
+

@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{%block title %}Restaurants{% endblock %}
+
+{% block content %}
+<div class="container" id="restaurant_page">
+    <h1>What type of cuisine would you like to eat?</h1>
+    <br>
+    <div class="container">
+        <form method="post">
+            {{ form.hidden_tag() }}
+            <div class="row">
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/vietnamese.jpeg" alt="Vietnamese" height="100">
+                    <br>
+                    <br>
+                    {{ form.vietnamese(class="button") }}
+                </div>
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/chinese.jpeg" alt="Chinese" height="100">
+                    <br>
+                    <br>
+                    {{ form.chinese(class="button") }}
+                </div>
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/indian.jpeg" alt="Indian" height="100">
+                    <br>
+                    <br>
+                    {{ form.indian(class="button") }}
+                </div>
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/japanese.jpeg" alt="Japanese" height="100">
+                    <br>
+                    <br>
+                    {{ form.japanese(class="button") }}
+                </div>
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/thai.jpeg" alt="Thai" height="100">
+                    <br>
+                    <br>
+                    {{ form.thai(class="button") }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/seafood.jpeg" alt="Seafood" height="100">
+                    <br>
+                    <br>
+                    {{ form.seafood(class="button") }}
+                </div>
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/sushi.jpeg" alt="Sushi" height="100">
+                    <br>
+                    <br>
+                    {{ form.sushi(class="button") }}
+                </div>
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/hamburger.jpeg" alt="Hamburger" height="100">
+                    <br>
+                    <br>
+                    {{ form.hamburger(class="button") }}
+                </div>
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/pizza.jpeg" alt="Pizza" height="100">
+                    <br>
+                    <br>
+                    {{ form.pizza(class="button") }}
+                </div>
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/french.jpeg" alt="French" height="100">
+                    <br>
+                    <br>
+                    {{ form.french(class="button") }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/italian.jpeg" alt="Italian" height="100">
+                    <br>
+                    <br>
+                    {{ form.italian(class="button") }}
+                </div>
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/mexican.png" alt="Mexican" height="100">
+                    <br>
+                    <br>
+                    {{ form.mexican(class="button") }}
+                </div>
+                <div class="col-sm">
+                    <br>
+                    <img src="static/cuisine-images/middle-eastern.jpeg" alt="Middle Eastern" height="100">
+                    <br>
+                    <br>
+                    {{ form.middle_eastern(class="button") }}
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

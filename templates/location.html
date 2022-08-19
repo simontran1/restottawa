@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{%block title %}Location{% endblock %}
+
+{% block content %}
+<div class="container center">
+    <h1 style="font-size: 35px"><img src="/static/location_logo.png" alt="location-log" style="width: 40px">
+        User location</h1>
+    <br>
+    <p>Please click the button below to authorize your location.</p>
+    <p>By authorizing the use of your location, you will be able to receive restaurants near you!</p>
+    <br>
+    <button onclick="getLocation()" class="button">Authorize your location</button>
+    <br></br>
+    <p id="location-result"></p>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.search_results(class="button", id="search-button", style="display: none;") }}
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="static/location.js"></script>
+{% endblock %}

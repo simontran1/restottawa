@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#restaurant_page {
+    position: relative;
+    top: 90%;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+
+}
+
+#welcome {
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.button {
+    background-color: rgb(99, 91, 255);
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#note-heading {
+    font-size: 20px;
+}

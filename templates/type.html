@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{%block title %}Type{% endblock %}
+
+{% block content %}
+<div class="container center">
+    <h1 style="font-size: 35px">What type of food would you like to eat?</h1>
+    <br>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.restaurant(class="button") }}
+        {{ form.fast_food(class="button") }}
+    </form>
+</div>
+{% endblock %}

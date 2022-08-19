@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{%block title %}Fast food{% endblock %}
+
+{% block content %}
+<div class="container center">
+    <h1>Popular fast food chains</h1><br><br>
+        <form method="post">
+            {{ form.hidden_tag() }}
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="static/fast-food-images/mcdonalds.png" alt="McDonald's" height="100"><br><br>
+                        {{ form.mcdonalds(class="button") }}
+                    </div>
+                    <div class="col-sm">
+                        <img src="static/fast-food-images/wendys.png" alt="Wendy's" height="100"><br><br>
+                        {{ form.wendys(class="button") }}
+                    </div>
+                    <div class="col-sm">
+                        <img src="static/fast-food-images/harveys.png" alt="Harvey's" height="100"><br><br>
+                        {{ form.harveys(class="button") }}
+                    </div>
+                    <div class="col-sm">
+                        <img src="static/fast-food-images/burger-king.png" alt="Burger King" height="100"><br><br>
+                        {{ form.burger_king(class="button") }}
+                    </div>
+                    <div class="col-sm">
+                        <img src="static/fast-food-images/a&w.png" alt="A&W" height="100"><br><br>
+                        {{ form.aw(class="button") }}
+                    </div>
+                </div><br><br><br>
+            </div>
+        </form>
+</div>
+{% endblock %}
